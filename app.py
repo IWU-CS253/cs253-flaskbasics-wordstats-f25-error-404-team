@@ -16,9 +16,8 @@ def word_count():
     return render_template("index.html", word_count=words, char_count=chars,avg_word_length=avg)
 
 
-
-
-    c
+if __name__ == "__main__":
+    app.run(debug=True)
 
 
 

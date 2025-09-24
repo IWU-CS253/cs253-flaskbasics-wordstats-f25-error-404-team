@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form action="/" method="post">
+        <label for="sentence">Enter a word</label>>
+        <input name="sentence" type="text" id="sentence"/>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if word_count and char_count and avg_word_length %}
+    <div style="display: flex">
+        <div> word count: {{ word_count }}</div>
+        <div> character count: {{ char_count }}</div>
+        <div> average_word_length count: {{ avg_word_length }}</div>
+    </div>
+    {% endif %}
+
+
+</body>
+</html>
